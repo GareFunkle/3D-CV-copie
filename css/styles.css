@@ -1,248 +1,258 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nobile:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caudex:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nobile:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caudex:wght@700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 span {
-    font-family: 'Hind Guntur', sans-serif;
+  font-family: "Hind Guntur", sans-serif;
 }
 
 h3 {
-    font-family: 'Caudex', serif;
+  font-family: "Caudex", serif;
 }
 
 p {
-    font-family: 'Nobile', sans-serif;
-    font-size: 0.8em;
+  font-family: "Nobile", sans-serif;
+  font-size: 0.8em;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url(../images/floor.jpg);
-    background-attachment: fixed;
-    background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(../images/floor.jpg);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .flipbook {
-    width: 800px;
-    height: 700px;
-    /* box-shadow: 0 4px 10px #666; */
-    
+  width: 800px;
+  height: 700px;
+  /* box-shadow: 0 4px 10px #666; */
 }
 
-
-.hard {
-    background: #f7f5f5;
+.flipbook .shadow {
+  box-shadow: -15px 15px 10px #666;
 }
 
+.flipbook .odd {
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    color-stop(0.95, #fff),
+    color-stop(1, #dadada)
+  );
+  background-image: -webkit-linear-gradient(right, #fff 95%, #c4c4c4 100%);
+  background-image: -moz-linear-gradient(right, #fff 95%, #c4c4c4 100%);
+  background-image: -ms-linear-gradient(right, #fff 95%, #c4c4c4 100%);
+  background-image: -o-linear-gradient(right, #fff 95%, #c4c4c4 100%);
+  background-image: linear-gradient(right, #fff 95%, #c4c4c4 100%);
+  -webkit-box-shadow: inset 0 0 5px #666;
+  -moz-box-shadow: inset 0 0 5px #666;
+  -o-box-shadow: inset 0 0 5px #666;
+  -ms-box-shadow: inset 0 0 5px #666;
+  box-shadow: inset 0 0 5px #666;
+}
+
+.flipbook .even {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.95, #fff),
+    color-stop(1, #dadada)
+  );
+  background-image: -webkit-linear-gradient(left, #fff 95%, #dadada 100%);
+  background-image: -moz-linear-gradient(left, #fff 95%, #dadada 100%);
+  background-image: -ms-linear-gradient(left, #fff 95%, #dadada 100%);
+  background-image: -o-linear-gradient(left, #fff 95%, #dadada 100%);
+  background-image: linear-gradient(left, #fff 95%, #dadada 100%);
+  -webkit-box-shadow: inset 0 0 5px #666;
+  -moz-box-shadow: inset 0 0 5px #666;
+  -o-box-shadow: inset 0 0 5px #666;
+  -ms-box-shadow: inset 0 0 5px #666;
+  box-shadow: inset 0 0 5px #666;
+}
+
+.flipbook .hard {
+  background: white !important;
+  color: #333;
+  -webkit-box-shadow: inset 0 0 5px #666;
+  -moz-box-shadow: inset 0 0 5px #666;
+  -o-box-shadow: inset 0 0 5px #666;
+  -ms-box-shadow: inset 0 0 5px #666;
+  box-shadow: inset 0 0 5px #666;
+  font-weight: bold;
+}
 
 .hard .book {
-    position: relative;
-    top: 0;
-    width: 800px;
-    height: 700px;
-    /* transform: rotate(-37.5deg) skewX(10deg);
+  position: relative;
+  top: 0;
+  width: 800px;
+  height: 700px;
+  /* transform: rotate(-37.5deg) skewX(10deg);
     box-shadow: -35px 35px 50px rgba(0,0,0,1); */
-    /* transition: 0.5s; */
-    background: #f7f5f5;
+  /* transition: 0.5s; */
+  background: #f7f5f5;
 }
-.second-cover{
-    position: absolute;
-    background: url(../images/bg2.png);
-    width: 50px;
-    height: 10px;
+.second-cover {
+  position: absolute;
+  /* background: url(../images/bg2.png); */
+  width: 50px;
+  height: 10px;
 }
-.second-cover .second-cover2{
-    position: relative;
-    left: 150px;
-    background: #f7f5f5;
-    width: 300px;
-    height: 700px;
-}
-
-.pages {
-    background: #f7f5f5;
+.second-cover .second-cover2 {
+  position: relative;
+  left: 150px;
+  background: #f7f5f5;
+  width: 300px;
+  height: 700px;
 }
 
-.page1 h2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Hind Guntur', sans-serif;
-    font-weight: 600;
-    font-size: 2em;
-    background: #f7f5f5;
-    width: 400px;
-    height: 100px;
+
+.page1 {
+  transform-origin: 100% 50% 0px;
+}
+
+.page1 h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Hind Guntur", sans-serif;
+  font-weight: 600;
+  font-size: 2em;
+  /* background: #f7f5f5; */
+  width: 400px;
+  height: 100px;
 }
 
 .page1 .line {
-    position: relative;
-    background: black;
-    width: 20px;
-    height: 2px;
-    top: -15px;
-    left: 50%;
+  position: relative;
+  background: black;
+  width: 20px;
+  height: 2px;
+  top: -15px;
+  left: 50%;
 }
 
-.page1 h3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
+ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 15px;
 }
 
-.page1 p {
-    margin: 10px;
+ul li {
+  margin: 20px;
+  font-size: 1.2em;
 }
 
 .page1 i {
-    position: relative;
-    display: flex;
-    justify-content: end;
-    align-items:flex-end;
-    top: 5px;
-    font-size: 0.7em;
-    margin: 15px;
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  top: 5px;
+  font-size: 0.7em;
+  margin: 15px;
 }
-
-/* .page2{
-    background: #07252d;
-    box-shadow: 0 4px 10px #666
-}
-
-.page2 h2 {
-    position: relative;
-    top: 150px;
-    font-size: 3em;
-    letter-spacing: 15px;
-    color: #0e3742;
-    text-transform: uppercase;
-    width: 100%;
-    text-align: center;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
-    line-height: 0.70em;
-    outline: none;
-    background: #07252d;
-    height: 200px;
-    animation: animate 5s linear infinite;
-}
-
-@keyframes animate {
-    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92% {
-        color: #0e3742;
-        text-shadow: none;
-    }
-
-    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100% {
-        color: #fff;
-        text-shadow: 0 0 10px #03bcf4,
-        0 0 20px #03bcf4,
-        0 0 40px #03bcf4,
-        0 0 80px #03bcf4,
-        0 0 160px #03bcf4;
-    } */
 
 .page2 i {
-    position: relative;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    top: 450px;
-    font-size: 0.7em;
-    margin: 15px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  top: 450px;
+  font-size: 0.7em;
+  margin: 15px;
 }
 
-
-
-.third-cover{
-    position: absolute;
-    background: url(../images/bg2.png);
-    width: 50px;
-    height: 10px;
+.third-cover {
+  position: absolute;
+  /* background: url(../images/bg2.png); */
+  width: 50px;
+  height: 10px;
 }
-.third-cover .third-cover2{
-    position: relative;
-    right: 50px;
-    background: #f7f5f5;
-    width: 300px;
-    height: 700px;
+.third-cover .third-cover2 {
+  position: relative;
+  right: 50px;
+  background: #f7f5f5;
+  width: 300px;
+  height: 700px;
 }
 
-.four-cover{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70%;
-    background: url(../images/bg2.png);
-    background-size: cover;
+.four-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  /* background: url(../images/bg2.png); */
+  background-size: cover;
 }
-
 
 .four-cover .white {
-    position: relative;
-    top: 15px;
-    margin: 50px;
-    background: #f7f5f5;
-    width: 300px;
-    height: 550px;
+  position: relative;
+  top: 15px;
+  margin: 50px;
+  background: #f7f5f5;
+  width: 300px;
+  height: 550px;
 }
 
 .white2 {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .white2 img {
-    position: relative;
-    display: flex;
-    width: 130px;
-    height: 110px;
+  position: relative;
+  display: flex;
+  width: 130px;
+  height: 110px;
 }
 
 .white2 p {
-    margin: 10px;
-    text-align: justify;
-    line-height: 17px;
+  margin: 10px;
+  text-align: justify;
+  line-height: 17px;
 }
 
 .after-img {
-    position: relative;
-    top: -15px;
+  position: relative;
+  top: -15px;
 }
 
-.after-img p{
-    text-align: justify;
-    margin:10px
+.after-img p {
+  text-align: justify;
+  margin: 10px;
 }
 
 .red {
-    position: absolute;
-    background: #EF1A1A;
-    transform: rotate(-45deg);
-    top: 74%;
-    width: 550px;
-    height: 70px;
-    z-index: 10;
-    
+  position: absolute;
+  background: #ef1a1a;
+  transform: rotate(-45deg);
+  top: 74%;
+  width: 550px;
+  height: 70px;
+  z-index: 10;
 }
 
 .red p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5px;
-    font-size: 40px;
-    color: #ffd700;
-    filter: drop-shadow(0 0 0.75rem gold);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  font-size: 40px;
+  color: #ffd700;
+  filter: drop-shadow(0 0 0.75rem gold);
 }
 
 /* .book:active {
@@ -299,90 +309,84 @@ body {
     transition: 0.45s;
 } */
 
-
 .book h2 {
-    font-family: 'Hind Guntur', sans-serif;
-    position: absolute;
-    bottom: 50px;
-    left: 20px;
-    font-size: 5em;
-    line-height: 1em;
-    color: #fff;
+  font-family: "Hind Guntur", sans-serif;
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+  font-size: 5em;
+  line-height: 1em;
+  color: #fff;
 }
 
 .book h2 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.book h2 span  {
-    font-family: 'Hind Guntur', sans-serif;
-    font-size: 0.6em;
-    background: url(../images/bg2.png);
-    background-attachment: fixed;
-    -webkit-background-clip: text;
-            background-clip: text;
-    -webkit-text-fill-color: transparent;
+.book h2 span {
+  font-family: "Hind Guntur", sans-serif;
+  font-size: 0.6em;
+  background: url(../images/bg2.png);
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .book h2 span p {
-    font-family: 'Hind Guntur', sans-serif;
-    font-size: 0.6em;
-    background: url(../images/bg2.png);
-    background-attachment: fixed;
-    -webkit-background-clip: text;
-            background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-family: "Hind Guntur", sans-serif;
+  font-size: 0.6em;
+  background: url(../images/bg2.png);
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .book .writer {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    color: #262626;
-    font-size: 0.6em;
-    padding-top: 5px;
-    font-weight: 500;
-    border-top-left-radius: 1px solid #262626;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #262626;
+  font-size: 0.6em;
+  padding-top: 5px;
+  font-weight: 500;
+  border-top-left-radius: 1px solid #262626;
 }
 
 .book .writer i {
-    font-weight: 700;
+  font-weight: 700;
 }
 
-.book .cover{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 70%;
-    background: url(../images/bg2.png);
-    background-size: cover;
+.book .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background: url(../images/bg2.png);
+  background-size: cover;
 }
-
-
 
 .on-deck {
-    position: relative;
-    top: 0;
-    left: 200px;
-    padding :2%;
-    width: 100px;
-    height: 100px;
-    background: #ffffa5;
-    transform: rotate(-37.5deg) skewX(10deg);
-    box-shadow: 2px 4px 6px #444;
-    -moz-box-shadow: -2px 4px 6px #444;
-    -webkit-box-shadow: -2px 4px 6px #444;
-    transition: 0.5s;
+  position: relative;
+  top: 0;
+  left: 200px;
+  padding: 2%;
+  width: 100px;
+  height: 100px;
+  background: #ffffa5;
+  transform: rotate(-37.5deg) skewX(10deg);
+  box-shadow: 2px 4px 6px #444;
+  -moz-box-shadow: -2px 4px 6px #444;
+  -webkit-box-shadow: -2px 4px 6px #444;
+  transition: 0.5s;
 }
 
 .on-deck:hover {
-    border-bottom-right-radius: 90px 30px;
+  border-bottom-right-radius: 90px 30px;
 }
 
 .on-deck .writer {
-    font-size: 15px;
+  font-size: 15px;
 }
-
-
-
