@@ -101,18 +101,15 @@ body {
   /* transition: 0.5s; */
   background: #f7f5f5;
 }
-.second-cover {
-  position: absolute;
-  /* background: url(../images/bg2.png); */
-  width: 50px;
-  height: 10px;
-}
+
 .second-cover .second-cover2 {
   position: relative;
-  left: 150px;
+  left: 9px;
   background: #f7f5f5;
-  width: 300px;
-  height: 700px;
+  width: 60%;
+  height: 98%;
+  margin-top: 5px;
+  margin-right: 5px;
 }
 
 
@@ -138,20 +135,27 @@ body {
   width: 20px;
   height: 2px;
   top: -15px;
-  left: 50%;
+  left: 47%;
 }
 
 ul {
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   margin: 15px;
 }
 
 ul li {
-  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 45px;
+  background: #dadada;
   font-size: 1.2em;
+  width: 100%;
+  list-style: none;
 }
 
 .page1 i {
@@ -316,7 +320,7 @@ ul li {
   left: 20px;
   font-size: 5em;
   line-height: 1em;
-  color: #fff;
+  color: #262626;
 }
 
 .book h2 a {
@@ -326,21 +330,23 @@ ul li {
 .book h2 span {
   font-family: "Hind Guntur", sans-serif;
   font-size: 0.6em;
-  background: url(../images/bg2.png);
+  color: #262626;
+  /* background: url(../images/bg2.png);
   background-attachment: fixed;
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 
 .book h2 span p {
   font-family: "Hind Guntur", sans-serif;
   font-size: 0.6em;
-  background: url(../images/bg2.png);
+  color: #262626;
+  /* background: url(../images/bg2.png);
   background-attachment: fixed;
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 
 .book .writer {
@@ -360,11 +366,14 @@ ul li {
 
 .book .cover {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  top: 5px;
+  left: 5px;
+  width: 90%;
   height: 70%;
-  background: url(../images/bg2.png);
+  /* margin: 5px; */
+  /* background: #f7f5f5; */
+  background: url(../images/test.jpg);
+  background-position: center;
   background-size: cover;
 }
 
